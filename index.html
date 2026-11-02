@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restorent</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italianno&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .font-familyy1 {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+
+        }
+
+        .font-familyy2 {
+            font-family: "Italianno", cursive;
+            font-weight: 900;
+            font-style: normal;
+            letter-spacing: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="w-full fixed top-0 left-0 right-0 z-50 ">
+
+        <div class="w-full max-w-[1540px] mx-auto bg-black">
+
+            <div class="max-w-[1400px] h-[76px] mx-auto px-5 flex items-center justify-between">
+
+                <div class="shrink-0">
+                    <img src="https://prium.github.io/restaurant/v2.2.0/assets/img/logo.png" alt="Restaurant Logo"
+                        class="w-[170px] h-auto">
+                </div>
+
+                <nav class="hidden lg:flex items-center gap-10 text-[16px] text-white">
+
+                    <a href="#" class="flex items-center gap-1 hover:text-[#FDCB58] transition">
+                        Home
+                    </a>
+
+                    <a href="#about" class="flex items-center gap-1 hover:text-[#FDCB58] transition">
+                        About Us
+                    </a>
+
+                    <a href="#menu" class="hover:text-[#FDCB58] transition">Menu</a>
+
+                    <a href="#gallery" class="flex items-center gap-1 hover:text-[#FDCB58] transition">
+                        Gallery
+                    </a>
+
+                    <a href="#contact" class="flex items-center gap-1 hover:text-[#FDCB58] transition">
+                        Contact
+                    </a>
+                </nav>
+
+                <div class="hidden md:block shrink-0">
+                    <a href="#contact"
+                        class="w-[344px] h-[46px] flex items-center justify-center border-2 border-[#FDCB58] rounded-md text-[#FDCB58] font-bold text-[16px] hover:bg-[#FDCB58] hover:text-black transition duration-300">
+                        MAKE A RESERVATION
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <section class="hero-section w-full pt-[76px]">
+
+        <div class="w-full max-w-[1540px] mx-auto">
+
+            <div class="relative w-full h-[742px] max-md:h-[500px] overflow-hidden">
+
+                <video class="absolute inset-0 w-full h-full object-cover object-center" autoplay loop muted
+                    playsinline>
+                    <source src="./Assets/WhatsApp Video 2026-11-02 at 17.16.42.mp4" type="video/mp4">
+                </video>
+
+                <div class="absolute inset-0 bg-black/30"></div>
+
+
+                <div class="absolute inset-0 flex items-center justify-center">
+
+                    <img src="https://prium.github.io/restaurant/v2.2.0/assets/img/logo-banner.png" alt="Restaurant"
+                        class="w-[200px] md:w-[280px] h-auto">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="menu" class="w-full bg-[#f7f8fc] md:py-0">
+
+        <div class="w-full max-w-[1540px] mx-auto ">
+
+            <div class=" relative mx-auto w-full bg-center bg-no-repeat flex flex-col items-center justify-center text-center "
+                style="background-image: url('https://prium.github.io/restaurant/v2.2.0/assets/img/gallery/fullpage-bg.jpg');">
+                <div class=" mx-auto py-30">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl font-bold text-yellow-400 mb-4">
+                            Our Menu </h1>
+
+                        <p class=" font-familyy2 text-white text-sm md:text-lg font-mono tracking-wide">
+                            THE VARIOUS DISHES ARE WAITING FOR YOUR COMING TO ENJOY ITS </p>
+                    </div>
+                </div>
+
+            </div>
+            <section class="bg-[#f7f8fc] w-full py-5 px-4 md:px-10 lg:px-20 lg:mb-20">
+
+                <div class="mt-10 flex justify-center gap-6 md:gap-12 mb-16 ">
+
+                    <div class="text-center text-yellow-400 group border-gray-800 pb-2 cursor-pointer">
+                        <div class="group-hover:text-yellow-400 transition">
+                            <i class="fa-solid fa-mug-saucer"></i>
+                        </div>
+                        <p class="text-sm text-yellow-400 group-hover:text-yellow-400 transition">
+                            Breakfast
+                        </p>
+                    </div>
+                    <div class="text-center group border-gray-800 pb-2 cursor-pointer">
+                        <div class="group-hover:text-yellow-400 transition">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <p class="text-sm text-gray-500 group-hover:text-yellow-400 transition">
+                            Lunch
+                        </p>
+                    </div>
+
+
+                    <div class="text-center group border-gray-800 pb-2 cursor-pointer">
+                        <div class="group-hover:text-yellow-400 transition">
+                            <i class="fa-solid fa-spoon"></i>
+                        </div>
+                        <p class="text-sm text-gray-500 group-hover:text-yellow-400 transition">
+                            Dinner
+                        </p>
+                    </div>
+
+                    <div class="text-center group border-gray-800 pb-2 cursor-pointer">
+                        <div class="group-hover:text-yellow-400 transition">
+                            <i class="fa-solid fa-cake-candles"></i>
+                        </div>
+                        <p class="text-sm text-gray-500 group-hover:text-yellow-400 transition">
+                            Desserts
+                        </p>
+                    </div>
+                    <div class="text-center group border-gray-800 pb-2 cursor-pointer">
+                        <div class="group-hover:text-yellow-400 transition">
+                            <i class="fa-solid fa-champagne-glasses"></i>
+                        </div>
+                        <p class="text-sm text-gray-500 group-hover:text-yellow-400 transition">
+                            Drinks
+                        </p>
+                    </div>
+
+
+                </div>
+                <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-10">
+                    <div class="space-y-10">
+                        <div>
+                            <div class="flex justify-between items-center gap-3">
+                                <h3 class="font-bold text-sm">BREAKFAST BOWL</h3>
+                                <span class="text-red-400 text-sm">$8.50</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-6 mt-2">
+                                Black Bean Cake, Greens, Tomato & Avocado Pico, Fried Egg, Lime Cream (Add Egg $1)
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-center gap-3">
+                                <h3 class="font-bold text-sm">EGG SANDWICH</h3>
+                                <span class="text-red-400 text-sm">$7.50</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-6 mt-2">
+                                Everything Bagel with Cream Cheese, Bacon, Tomato, Red Onion, Basil Pesto, Arugula
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-center gap-3">
+                                <h3 class="font-bold text-sm">BREAKFAST BURRITO</h3>
+                                <span class="text-red-400 text-sm">$8.50</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-6 mt-2">
+                                Three Scrambled Eggs, Cheddar, our Homemade Black Bean Cake, Avocado, Pico & Lime Cream
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="space-y-10">
+                        <div>
+                            <div class="flex justify-between items-center gap-3">
+                                <h3 class="font-bold text-sm">VEGGIE JAMMIE</h3>
+                                <span class="text-red-400 text-sm">$5.50</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-6 mt-2">
+                                Everything Bagel with our Homemade Tofu Herb Spread, Cucumber Tomato, Red Onion, &
+                                Arugula
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-center gap-3">
+                                <h3 class="font-bold text-sm">BAGEL WITH CREAM CHEESE</h3>
+                                <span class="text-red-400 text-sm">$6.00</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-6 mt-2">
+                                Everything Bagel with Cream Cheese, Bacon, Tomato, Red Onion, Basil Pesto, Arugula
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-center gap-3">
+                                <h3 class="font-bold text-sm">BREAKFAST PASTRIES</h3>
+                                <span class="text-red-400 text-sm">$9.00</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-6 mt-2">
+                                Three Scrambled Eggs, Cheddar, our Housemade Black Bean Cake, Avocado, Pico, & Lime
+                                Cream
+                            </p>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-center gap-3">
+                                <h3 class="font-bold text-sm">Fried egg</h3>
+                                <span class="text-red-400 text-sm">$9.50</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-6 mt-2">
+                                Three Fried Eggs, house hot sauce, local cheddar mac, lettuce, pickle & onion on a
+                                sesame roll
+                            </p>
+                        </div>
+
+
+                    </div>
+                    <div class="space-y-10">
+                        <div>
+                            <div class="flex justify-between items-center gap-3">
+                                <h3 class="font-bold text-sm">SMOKED SALMON BAGEL</h3>
+                                <span class="text-red-400 text-sm">$9.50</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-6 mt-2">
+                                Smoked Salmon, Capers, House Pickled Red Onions, & Cream Cheese served on a Toasted
+                                Bagel
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-center gap-3">
+                                <h3 class="font-bold text-sm">BREAKFAST JAMMIE</h3>
+                                <span class="text-red-400 text-sm">$6.50</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-6 mt-2">
+                                Everything Bagel with Cream Cheese, Bacon, Tomato, Red Onion, Basil Pesto, Arugula
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-center gap-3">
+                                <h3 class="font-bold text-sm">AVOCADO TOAST</h3>
+                                <span class="text-red-400 text-sm">$7.50</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-6 mt-2">
+                                Crushed Avocado topped with MV Sea Salt on Toasted Multigrain
+                            </p>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-center gap-3">
+                                <h3 class="font-bold text-sm">AVOCADO TOAST</h3>
+                                <span class="text-red-400 text-sm">$6.50</span>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-6 mt-2">
+                                Crushed Avocado topped with MV Sea Salt on Toasted Multigrain
+                            </p>
+                        </div>
+                    </div>
+            </section>
+
+
+
+            <div
+                class="w-full max-w-[1250px] mx-auto px-4 sm:px-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+
+                <div class="CARD1 group relative overflow-hidden rounded-lg cursor-pointer">
+
+
+                    <div class="h-[230px] sm:h-[280px] lg:h-[350px] xl:h-[413px]">
+                        <img src="https://prium.github.io/restaurant/v2.2.0/assets/img/food/bowl-delicious-dinner.png"
+                            alt="Delicious dinner"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+
+
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-500">
+                    </div>
+
+
+                    <div
+                        class="absolute inset-0 z-10 flex flex-col justify-end items-end text-center p-5 opacity-0 group-hover:opacity-100 transition duration-500">
+
+                        <p class=" font-familyy font-bold uppercase text-white text-2xl tracking-wider leading-relaxed">
+                            Smoked beefffff
+                            <br>
+                            sub-sandwich
+                        </p>
+
+                        <h3 class="text-white text-md font-bold mt-1">
+                            Slow cooked beef sub
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div class="CARD2 group relative overflow-hidden rounded-lg cursor-pointer">
+
+
+                    <div class="h-[230px] sm:h-[280px] lg:h-[350px] xl:h-[413px]">
+                        <img src="https://prium.github.io/restaurant/v2.2.0/assets/img/food/antioxidant-beverage-carrot-juice.png"
+                            alt="Delicious dinner"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+
+
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-500">
+                    </div>
+
+
+                    <div
+                        class="absolute inset-0 z-10 flex flex-col justify-end items-end text-end p-5 opacity-0 group-hover:opacity-100 transition duration-500">
+
+                        <p class=" font-familyy font-bold uppercase text-white text-2xl tracking-wider leading-relaxed">
+                            Pumpkin Spice
+                            <br>
+                            Juice
+                        </p>
+
+                        <h3 class="text-white text-md font-bold mt-1">
+                            Chilled drink with cinamen
+                        </h3>
+
+                    </div>
+
+                </div>
+
+                <div class="CARD3 group relative overflow-hidden rounded-lg cursor-pointer">
+
+
+                    <div class="h-[230px] sm:h-[280px] lg:h-[350px] xl:h-[413px]">
+                        <img src="https://prium.github.io/restaurant/v2.2.0/assets/img/food/sec.jpg"
+                            alt="Delicious dinner"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+
+
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-500">
+                    </div>
+
+
+                    <div
+                        class="absolute inset-0 z-10 flex flex-col justify-end items-end text-end p-5 opacity-0 group-hover:opacity-100 transition duration-500">
+
+                        <p class=" font-familyy font-bold uppercase text-white text-2xl tracking-wider leading-relaxed">
+                            Cold milk shake
+                            <br>
+                            juice
+                        </p>
+
+                        <h3 class="text-white text-md font-bold mt-1">
+                            With fresh milk
+                        </h3>
+
+                    </div>
+
+                </div>
+
+                <div class="CARD4 group relative overflow-hidden rounded-lg cursor-pointer">
+
+
+                    <div class="h-[230px] sm:h-[280px] lg:h-[350px] xl:h-[413px]">
+                        <img src="https://prium.github.io/restaurant/v2.2.0/assets/img/food/bowl-calcium-cereal.png"
+                            alt="Delicious dinner"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+
+
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-500">
+                    </div>
+
+
+                    <div
+                        class="absolute inset-0 z-10 flex flex-col justify-end items-end text-center p-5 opacity-0 group-hover:opacity-100 transition duration-500">
+
+                        <p class=" font-familyy font-bold uppercase text-white text-2xl tracking-wider leading-relaxed">
+                            Blueberry milk
+                            <br>
+                            smoothie
+                        </p>
+
+                        <h3 class="text-white text-md font-bold mt-1">
+                            With fresh Papermint
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+    </section>
+
+    <section class="w-full bg-[#fff] py-16 md:py-24">
+
+        <div class="max-w-[1540px] mx-auto px-5">
+
+
+            <div class="text-center max-w-[900px] mx-auto mb-16">
+
+                <p class="text-[#26364b] text-xl md:text-2xl font-semibold mb-2">
+                    Catering
+                </p>
+
+                <h2 class="font-familyy2 text-3xl sm:text-4xl md:text-5xl font-bold font-serif text-black mb-8">
+                    We Manage Your Events
+                </h2>
+
+                <p class="text-[#718096] text-sm sm:text-base md:text-lg leading-7 md:leading-[30px]">
+                    Allow our Chef to deliver the perfect private dinner or cocktail party experience in your home; or
+                    let us simply add a little extra flavor to your next office meeting, boat trip, or beach picnic. By
+                    partnering with our sibling location Rosewater Wine & Spirits, we can offer a full array of bar
+                    services and beverage selections. Email us to learn more.
+                </p>
+
+            </div>
+
+
+            <div
+                class="max-w-[776px] mx-auto bg-white rounded-lg shadow-[0_15px_60px_rgba(0,0,0,0.15)] p-6 sm:p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-8">
+
+
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <img src="https://prium.github.io/restaurant/v2.2.0/assets/img/food/pancake_PNG94.png"
+                        alt="Pancakes" class="w-full max-w-[340px] h-[180px] sm:h-[220px] object-contain">
+                </div>
+
+
+                <div class="w-full md:w-1/2 flex flex-col items-center text-center gap-8">
+
+                    <h3 class="font-familyy1 text-[#718096] text-base md:text-lg font-bold leading-8">
+                        We Cater in Weddings, Corporate Functions and Events
+                    </h3>
+
+                    <a href="#reservation"
+                        class="w-full max-w-[236px] py-3 bg-[#FDC653] rounded-lg text-[#52657d] font-bold text-base hover:bg-[#eeb63e] transition duration-300">
+                        HIRE US NOW
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="gallery" class="Gallery bg-[#f7f8fc] py-16 md:py-24">
+        <div class="max-w-[1280px] mx-auto px-4 sm:px-6">
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 lg:grid-rows-2 lg:h-[514px] gap-4">
+
+                <div class="col-span-1 sm:col-span-2 lg:col-span-2 lg:row-span-2 h-[260px] sm:h-[320px] lg:h-auto">
+                    <img src="https://prium.github.io/restaurant/v2.2.0/assets/img/gallery/thumb/bigimg.jpg" alt="Food"
+                        class="w-full h-full object-cover rounded-lg hover:scale-105 transition duration-500">
+                </div>
+
+                <div class="h-[220px] lg:h-auto">
+                    <img src="https://prium.github.io/restaurant/v2.2.0/assets/img/gallery/thumb/1.jpg" alt="Food"
+                        class="w-full h-full object-cover rounded-lg hover:scale-105 transition duration-500">
+                </div>
+
+                <div class="h-[220px] lg:h-auto">
+                    <img src="https://prium.github.io/restaurant/v2.2.0/assets/img/gallery/thumb/2.jpg" alt="Food"
+                        class="w-full h-full object-cover rounded-lg hover:scale-105 transition duration-500">
+                </div>
+
+                <div class="h-[220px] lg:h-auto">
+                    <img src="https://prium.github.io/restaurant/v2.2.0/assets/img/gallery/thumb/3.jpg" alt="Food"
+                        class="w-full h-full object-cover rounded-lg hover:scale-105 transition duration-500">
+                </div>
+
+                <div class="h-[220px] lg:h-auto">
+                    <img src="https://prium.github.io/restaurant/v2.2.0/assets/img/gallery/thumb/4.jpg" alt="Food"
+                        class="w-full h-full object-cover rounded-lg hover:scale-105 transition duration-500">
+                </div>
+
+                <div class="h-[220px] lg:h-auto">
+                    <img src="https://prium.github.io/restaurant/v2.2.0/assets/img/gallery/thumb/5.jpg" alt="Food"
+                        class="w-full h-full object-cover rounded-lg hover:scale-105 transition duration-500">
+                </div>
+
+                <div class="h-[220px] lg:h-auto">
+                    <img src="https://prium.github.io/restaurant/v2.2.0/assets/img/gallery/thumb/6.jpg" alt="Food"
+                        class="w-full h-full object-cover rounded-lg hover:scale-105 transition duration-500">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="about" class="w-full bg-white py-12 sm:py-16 lg:py-24 overflow-hidden">
+
+        <div class="max-w-[1340px] mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-8 items-center">
+
+
+            <div
+                class="relative order-1 lg:order-2 min-h-[280px] sm:min-h-[420px] lg:min-h-[650px] flex items-center justify-center">
+
+                <img src="https://prium.github.io/restaurant/v2.2.0/assets/img/food/soup.png"
+                    alt="Restaurant special food"
+                    class="absolute md:left-60 lg:left-35 z-10 w-full max-w-[600px] h-auto object-contain">
+
+            </div>
+
+            <div class="order-2 lg:order-1 max-w-[600px] w-full mx-auto lg:mx-0">
+
+                <p class="text-[#26364b] text-xl font-semibold">About Us</p>
+
+                <h2 class="font-familyy2  sm:text-4xl font-bold font-serif text-black mt-1">
+                    Who Are We?
+                </h2>
+
+                <p class="text-[#718096] text-sm sm:text-base leading-7 mt-6 max-w-[520px]">
+                    We are a chain of theme restaurant founded in 1971 in London. In 1979, the cafe began covering its
+                    walls with rock and roll memorabilia, a tradition which expanded to others in the chain.
+                </p>
+
+                <a href="#about"
+                    class="inline-flex items-center justify-center bg-[#FDC653] text-[#52657d] font-bold text-sm px-10 py-3 rounded-md mt-6 hover:bg-[#eeb63e] transition">
+                    LEARN MORE
+                </a>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-x-4 sm:gap-x-5 gap-y-8 mt-10 sm:mt-12">
+
+                    <div class="text-center">
+                        <img src="https://prium.github.io/restaurant/v2.2.0/assets/img/team/6.png" alt="Team member"
+                            class="w-24 h-24 sm:w-32 sm:h-32 lg:w-36 lg:h-36 mx-auto rounded-full object-cover">
+                        <h4 class="text-[#52657d] font-bold text-sm mt-3">Gordon Ramsey</h4>
+                        <p class="text-[#718096] text-xs mt-1">Owner & Founder</p>
+                    </div>
+
+                    <div class="text-center">
+                        <img src="https://prium.github.io/restaurant/v2.2.0/assets/img/team/5.png" alt="Team member"
+                            class="w-24 h-24 sm:w-32 sm:h-32 lg:w-36 lg:h-36 mx-auto rounded-full object-cover">
+                        <h4 class="text-[#52657d] font-bold text-sm mt-3">Gordon Ramsey</h4>
+                        <p class="text-[#718096] text-xs mt-1">Owner & Founder</p>
+                    </div>
+
+                    <div class="text-center">
+                        <img src="https://prium.github.io/restaurant/v2.2.0/assets/img/team/4.png" alt="Team member"
+                            class="w-24 h-24 sm:w-32 sm:h-32 lg:w-36 lg:h-36 mx-auto rounded-full object-cover">
+                        <h4 class="text-[#52657d] font-bold text-sm mt-3">Gordon Ramsey</h4>
+                        <p class="text-[#718096] text-xs mt-1">Owner & Founder</p>
+                    </div>
+
+                    <div class="text-center">
+                        <img src="https://prium.github.io/restaurant/v2.2.0/assets/img/team/3.png" alt="Team member"
+                            class="w-24 h-24 sm:w-32 sm:h-32 lg:w-36 lg:h-36 mx-auto rounded-full object-cover">
+                        <h4 class="text-[#52657d] font-bold text-sm mt-3">Gordon Ramsey</h4>
+                        <p class="text-[#718096] text-xs mt-1">Owner & Founder</p>
+                    </div>
+
+                    <div class="text-center">
+                        <img src="https://prium.github.io/restaurant/v2.2.0/assets/img/team/2.png" alt="Team member"
+                            class="w-24 h-24 sm:w-32 sm:h-32 lg:w-36 lg:h-36 mx-auto rounded-full object-cover">
+                        <h4 class="text-[#52657d] font-bold text-sm mt-3">Gordon Ramsey</h4>
+                        <p class="text-[#718096] text-xs mt-1">Owner & Founder</p>
+                    </div>
+
+                    <div class="text-center">
+                        <img src="https://prium.github.io/restaurant/v2.2.0/assets/img/team/1.png" alt="Team member"
+                            class="w-24 h-24 sm:w-32 sm:h-32 lg:w-36 lg:h-36 mx-auto rounded-full object-cover">
+                        <h4 class="text-[#52657d] font-bold text-sm mt-3">Gordon Ramsey</h4>
+                        <p class="text-[#718096] text-xs mt-1">Owner & Founder</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="relative w-full bg-[#f7f8fc] py-16 md:py-24 ">
+        <div class="max-w-[1540px] mx-auto">
+            <div class="">
+                <img src="https://prium.github.io/restaurant/v2.2.0/assets/img/food/green.png" alt=""
+                    class="absolute left-0 -top-10  h-full object-cover ">
+            </div>
+
+            <div class="relative z-10 max-w-[1400px] mx-auto px-5">
+
+                <div class="text-center mb-12 md:mb-16">
+                    <p class="text-[#26364b] text-xl font-semibold">Location & Timing</p>
+                    <h2 class="font-familyy2 text-3xl sm:text-4xl font-bold font-serif text-black mt-1">
+                        Contact with us
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-[1360px] mx-auto">
+
+                    <div
+                        class="bg-white rounded-lg shadow-sm p-7 sm:p-10 flex flex-col justify-center gap-4 min-h-[210px]">
+
+                        <div class="flex items-start gap-3 text-[#718096] text-sm leading-6">
+                            <i class="fa-solid fa-map text-[#ff806e] mt-1"></i>
+                            <p>Av. Paz Soldán 290, San Isidro, Lima 27 - Peru</p>
+                        </div>
+
+                        <div class="flex items-center gap-3 text-[#718096] text-sm">
+                            <i class="fa-solid fa-phone text-[#ff806e]"></i>
+                            <p>+511 442-2777</p>
+                        </div>
+
+                        <div class="flex items-center gap-3 text-[#718096] text-sm">
+                            <i class="fa-solid fa-envelope text-[#ff806e]"></i>
+                            <p>mail@restaurantpro.com</p>
+                        </div>
+
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-sm p-7 sm:p-10 min-h-[210px]">
+
+                        <h3 class="text-[#ff806e] font-bold text-sm mb-4">
+                            Hours of service
+                        </h3>
+
+                        <div class="text-[#718096] text-sm leading-6 space-y-4">
+
+                            <div>
+                                <p class="text-[#26364b]">Monday to Saturday</p>
+                                <p>1:00 pm - 3:00 pm and</p>
+                                <p>7:00 pm - 11:00 pm</p>
+                            </div>
+
+                            <div>
+                                <p class="text-[#26364b]">Sunday</p>
+                                <p>12:30 pm - 3:30 pm</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="relative bg-white rounded-lg shadow-sm p-7 sm:p-10 min-h-[210px] overflow-hidden md:col-span-2 lg:col-span-1">
+
+                        <img src="https://prium.github.io/restaurant/v2.2.0/assets/img/food/kisspng-soup.png" alt=""
+                            class="absolute -top-5 -right-5 w-28 h-28 object-contain">
+
+                        <div class="relative z-10">
+
+                            <h3 class="text-[#52657d] font-bold text-sm mb-1">
+                                Telephone support:
+                            </h3>
+
+                            <p class="text-[#718096] text-sm leading-6">
+                                Monday to Saturday from<br>
+                                9:00 am to 9:00 pm
+                            </p>
+
+                            <a href="#reservation"
+                                class="mt-7 w-full sm:max-w-[235px] h-[36px] flex items-center justify-center bg-[#ff806e] text-white text-sm font-bold rounded-md hover:bg-[#ed6e5c] transition">
+                                MAKE A RESERVATION
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="w-full bg-[#f7f8fc] py-16 md:py-24">
+        <div class="max-w-[1540px] mx-auto">
+
+            <div class="max-w-[1400px] mx-auto px-5">
+
+
+                <div class="text-center mb-12 md:mb-14">
+                    <h2 class=" font-familyy2 text-3xl sm:text-4xl md:text-5xl font-bold font-serif text-black">
+                        Feel free to drop us a line!
+                    </h2>
+                    <p class="text-[#718096] text-sm sm:text-base leading-7 mt-4 max-w-[800px] mx-auto">
+                        Let's talk if you have any query or suggestion. We are open to learn from you.
+                        So don't hesitate to reach us anytime.
+                    </p>
+                </div>
+
+                <form class="max-w-[1330px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-9">
+
+                    <div class="space-y-5">
+                        <input type="text" placeholder="Your Name" required
+                            class="w-full h-[52px] px-5 bg-white border-2 border-[#d5deec] rounded-md outline-none text-[#52657d] placeholder:text-[#aab6ca] focus:border-[orange]  transition">
+
+                        <input type="text" placeholder="Subject" required
+                            class="w-full h-[53px] px-5 bg-white border-2 border-[#d5deec] rounded-md outline-none text-[#52657d] placeholder:text-[#aab6ca] focus:border-[orange] transition">
+
+                        <input type="email" placeholder="Email Address" required
+                            class="w-full h-[53px] px-5 bg-white border-2 border-[#d5deec] rounded-md outline-none text-[#52657d] placeholder:text-[#aab6ca] focus:border-[orange] transition">
+
+                        <label class="flex items-center gap-3 text-[orange] text-lg cursor-pointer w-fit">
+                            <input type="checkbox" class="w-5 h-5 accent-[orange]">
+                            Send me a copy
+                        </label>
+                    </div>
+
+                    <div class="flex flex-col gap-5">
+                        <textarea placeholder="Type your message here" required
+                            class="w-full h-[190px] md:h-[194px] p-5 bg-white border-2 border-[#d5deec] rounded-md outline-none text-[#52657d] placeholder:text-[#aab6ca] focus:border-[orange] transition"></textarea>
+
+                        <button type="submit"
+                            class="w-full sm:w-[272px] h-[46px] bg-[#0c192a] text-white font-bold rounded-md hover:bg-[#26364b] transition duration-300">
+                            GIVE US A SHOT
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="w-full bg-[#0b192b] text-white md:pt-10 overflow-hidden">
+        <div class="max-w-[1540px] mx-auto">
+            <div class="max-w-[1250px] mx-auto px-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
+
+                <div class="flex items-center gap-5 sm:col-span-2 lg:col-span-1">
+                    <img src="https://prium.github.io/restaurant/v2.2.0/assets/img/food/pngfood2.png" alt="Pasta"
+                        class="hidden sm:block w-24 lg:w-32 h-[300px] object-contain">
+
+                    <div class="flex flex-col gap-6">
+                        <img src="https://prium.github.io/restaurant/v2.2.0/assets/img/logo.png" alt="Restaurant"
+                            class="w-[170px]">
+
+                        <h2 class="text-2xl sm:text-3xl font-serif leading-tight">
+                            Want To Taste<br>Our Food?
+                        </h2>
+
+                        <a href="#menu"
+                            class="w-full sm:w-[250px] h-[46px] flex items-center justify-center bg-[#FDC653] text-[#52657d] font-bold rounded-lg hover:bg-[#eeb63e] transition">
+                            ORDER ONLINE
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:pl-8">
+                    <h3 class="font-bold text-base mb-9">ABOUT</h3>
+
+                    <ul class="border-l border-white/10 pl-9 space-y-4 text-[#718096]">
+                        <li><a href="#about" class="hover:text-[#FDC653] transition">About</a></li>
+                        <li><a href="#services" class="hover:text-[#FDC653] transition">Services</a></li>
+                        <li><a href="#careers" class="hover:text-[#FDC653] transition">Careers</a></li>
+                        <li><a href="#hire-us" class="hover:text-[#FDC653] transition">Hire Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-base mb-9">RESOURCES</h3>
+
+                    <ul class="border-l border-white/10 pl-9 space-y-4 text-[#718096]">
+                        <li><a href="#terms" class="hover:text-[#FDC653] transition">Terms</a></li>
+                        <li><a href="#help" class="hover:text-[#FDC653] transition">Help</a></li>
+                        <li><a href="#privacy" class="hover:text-[#FDC653] transition">Privacy</a></li>
+                    </ul>
+
+                    <div class="flex items-center gap-7 mt-8 pl-9 text-[#718096] text-xl">
+                        <a href="#" class="hover:text-[#FDC653] transition"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-[#FDC653] transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="hover:text-[#FDC653] transition"><i
+                                class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#" class="hover:text-[#FDC653] transition"><i class="fa-brands fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="bg-black w-[1540px] text-center py-10  ">
+            <p class="text-sm text-gray-400">Made With
+                <span class="text-yellow-500">♥</span> By
+                <a href="#" class="font-semibold  text-white">Devendra Singh</a>
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>
